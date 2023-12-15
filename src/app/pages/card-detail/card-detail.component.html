@@ -1,0 +1,90 @@
+<div class="card-detail">
+    <mat-card class="card-content">
+        <div class="title">
+            <span> My Cards: {{card}}/{{images.length}} </span>
+            <div class="button">
+                <button class="button" (click)="previousImage()"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="button" (click)="nextImage()"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <mat-card-content>
+            <div class="card-container">
+                <img src="{{ images[currentImageIndex] }}" alt="Credit Card" class="card-image" style="height:120px;"/>
+            </div>
+            <div class="payment">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span> Add New Card </span>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="card-content">
+        <div class="title">
+            Quick Actions
+        </div>
+        <mat-card-content>
+            <div class="action">
+
+                <div class="icon">
+                    <i class="fa-regular fa-square-plus fa-2x"></i>
+                    <span class="name">Top up</span>
+                </div>
+                <div class="line"></div>
+
+                <div class="icon">
+                    <i class="fa-solid fa-location-arrow fa-2x"></i>
+                    <span class="name">Transfer</span>
+                </div>
+                <div class="line"></div>
+
+                <div class="icon">
+                    <i class="fa-solid fa-money-bill-transfer fa-2x"></i>
+                    <span class="name">Withdrawal</span>
+                </div>
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="card-content">
+        <div class="title">
+            Saving Plan
+        </div>
+        <mat-card-content>
+            <mat-card class="save card-content">
+                <mat-card-content>
+                    <div class="saving">
+                        <div class="target">
+
+                            <div class="target-left">
+                                <span class="icon"><i class="fa-regular fa-clock fa-2x"></i></span>
+                            </div>
+
+                            <div class="target-right">
+                                <span class="item">New Watch</span>
+                                <span class="amount">Target: $2,000</span>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                        </div>
+                    </div>
+                    <div class="saving">
+                        <div class="target">
+
+                            <div class="target-left">
+                                <span class="icon"> <i class="fa-brands fa-playstation fa-2x"></i></span>
+                            </div>
+
+                            <div class="target-right">
+                                <span class="item">Play Station</span>
+                                <span class="amount">Target: $2,000</span>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </mat-card-content>
+    </mat-card>
+</div>

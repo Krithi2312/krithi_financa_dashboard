@@ -1,0 +1,23 @@
+<div class="header">
+    <div class="message" *ngIf="!hide">
+        <span class="text">Stay Updated on our latest feature by receiving notification from us!</span>
+        <button class="button"><span>Learn more</span></button>
+        <button class="close-button" mat-icon-button (click)="close()" id="close" [tabIndex]="-1">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="header-content">
+        <div class="banker">
+            <div class="content">
+                <i class="fa-solid fa-vault fa-2x bank"></i>
+                <span class="title">Hexa Bank</span>
+            </div>
+            <div class="nav">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+        </div>
+        <div class="overview">
+            <app-overview></app-overview>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+.transactions {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    height: 100%;
+    .header {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .title {
+            font-size: x-large;
+            padding-top: 8px;
+        }
+
+        .search {
+            border: 1px solid #e1e1e1;
+            border-radius: 10px;
+            padding: 10px;
+            margin-right: 8px;
+        }
+        button {
+            border-radius: 10px;
+            padding: 1px 8px;
+            margin-right: 8px;
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        .total {
+            font-size: 40px;
+            padding: 5px 0px;
+        }
+        .progress {
+            padding: 15px 0px;
+            .mat-progress-bar {
+                padding: 3px;
+            }
+        }
+        .limit {
+            display: flex;
+            justify-content: space-between;
+            padding: 2px 0px;
+        }
+    }
+}

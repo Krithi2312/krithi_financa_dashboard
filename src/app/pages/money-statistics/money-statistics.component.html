@@ -1,0 +1,30 @@
+<div class="transactions">
+    <div class="header">
+        <span class="title">Money Statistics</span>
+        <div class="actions">
+            <button mat-stroked-button>Monthly<i class="fa-solid fa-angle-down"></i></button>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+    </div>
+    <mat-card class="card-content">
+        <mat-card-content>
+            <div class="actions">
+
+                <div class="icon" *ngFor="let statistic of statistics | keyvalue">
+                    <span class="total">{{ statistic.key }}</span>
+                    <span> {{ statistic.value.value }}</span>
+                    <span class="name" [ngStyle]="{'color': statistic.value.trend_color}"> <i class="fa-solid fa-arrow-trend-up"></i>
+                        {{statistic.value.trend }} from last month</span>
+                </div>
+                <div class="line"></div>
+
+            </div>
+            <div class="chart">
+                <apx-chart [series]="chartOptions.series!" [chart]="chartOptions.chart!"
+                    [dataLabels]="chartOptions.dataLabels!" [plotOptions]="chartOptions.plotOptions!"
+                    [xaxis]="chartOptions.xaxis!" [yaxis]="chartOptions.yaxis!" [stroke]="chartOptions.stroke!"
+                    [title]="chartOptions.title!" [tooltip]="chartOptions.tooltip!"></apx-chart>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

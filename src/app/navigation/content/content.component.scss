@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    .dashboard{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        .dashboard-left{
+            margin: 10px 10px 0px 10px;
+            width: 300px;
+        }
+        .dashboard-right{
+            height: 100%;
+            width: 875px;
+            .dashboard-right-column{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                .dashboard-right-content{
+                    margin: 10px 10px 0px 10px;
+                }
+            }
+        }
+    }
+
+}

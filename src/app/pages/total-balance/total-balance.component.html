@@ -1,0 +1,22 @@
+<div class="transactions">
+    <div class="header">
+        <span class="title">Total Balance</span>
+        <div class="actions">
+            <span class="search">
+                <i class="fa-solid fa-ellipsis"></i>
+            </span>
+        </div>
+    </div>
+    <div class="content">
+        <span class="total">{{ balance?.total_balance | currency:'USD' }}</span>
+        <span class="progress">
+            <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+        </span>
+        <div class="limit">
+            <span>Monthly payment limit</span>
+            <span>
+                {{balance?.payment_done_so_far | currency:'USD' }} / {{balance?.monthly_payment_limit | currency:'USD' }}
+            </span>
+        </div>
+    </div>
+</div>

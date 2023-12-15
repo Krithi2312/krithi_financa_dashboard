@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+html,
+body {
+    background-color: var(--dsr-color-white);
+    overflow-y: hidden;
+}
+
+.scrollable-container {
+    min-height: calc(100vh - 185px);
+}
+
+.scrollspy-menu {
+    width: fit-content;
+    border-left: 1px solid var(--dsr-color-hover);
+    color: var(--dsr-color-text-secondary);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.scrollspy-item {
+    display: flex;
+    text-decoration: none;
+    border-left: 0.4rem solid var(--dsr-color-white);
+    color: var(--dsr-color-text-secondary);
+    height: 3.8rem;
+    line-height: 3.8rem;
+    padding-right: 0.8rem;
+    cursor: pointer;
+}
+
+.scrollspy-item::before {
+    content: "";
+    padding-left: 0.8rem;
+    border-left: 0.4rem solid var(--dsr-color-white);
+}
+
+.scrollspy-item.active {
+    color: var(--dsr-color-text);
+    background-color: var(--dsr-color-light-1);
+    font-weight: bold;
+    border-left: 0.4rem solid var(--dsr-color-primary);
+}
+
+.scrollspy-container {
+    height: 100%;
+    overflow: auto;
+}
+
+.scroll-menu {
+    position: fixed;
+    width: 20rem;
+    top: 12rem;
+    left: 115rem;
+}
+
+table.mat-table thead th {
+    box-shadow: 0 1px 0 0 #e2e8f0;
+    background: #f1f1f2;
+}
+
+app-sidebar > div {
+    padding-bottom: 2px;
+}
+
+button.close {
+    right: 297px !important;
+    top: 160px;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

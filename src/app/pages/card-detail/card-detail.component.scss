@@ -1,0 +1,120 @@
+.card-detail {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+
+    .card-content {
+        box-shadow: none;
+        padding-bottom: 0px;
+        .title {
+            font-size: large;
+            font-weight: 500;
+            margin: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                background-color: white;
+                border-radius: 2px;
+                border: 1px solid rgb(232, 230, 230);
+                margin-left: 5px;
+            }
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+
+        .card-image {
+            width: 100%;
+        }
+
+        .next-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .payment {
+            height: 30px;
+            width: 100%;
+            border-radius: 5px;
+            border: dashed 1px rgb(114, 111, 111);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .action {
+            border: 1px solid rgb(232, 230, 230);
+            border-radius: 10px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            padding: 10px 0px;
+            .icon {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .name {
+                    font-size: 10px;
+                }
+            }
+
+            .line {
+                border-left: 1px solid rgb(232, 230, 230);
+                height: 40px;
+            }
+        }
+        .save {
+            padding: 0px;
+            .saving {
+                border: 1px solid rgb(232, 230, 230);
+                border-radius: 10px;
+                height: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                .target {
+                    display: flex;
+                    flex-direction: row;
+                    height: 45px;
+                    .target-left {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-right: 5px;
+                        padding-top: 3px;
+                        .icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 35px;
+                            height: 35px;
+                            border: 1px solid rgb(232, 230, 230);
+                            border-radius: 5px;
+                        }
+                    }
+                    .target-right {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .item {
+                            font-size: 15px;
+                            height: 15px;
+                            font-weight: bold;
+                        }
+                        .amount {
+                            font-size: 10px;
+                            height: 15px;
+                        }
+                    }
+                }
+                .progress {
+                    padding-top: 8px;
+                }
+            }
+        }
+    }
+}
